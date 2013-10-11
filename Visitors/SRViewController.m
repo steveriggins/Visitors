@@ -43,7 +43,7 @@
 
 }
 
-- (void)visitWithVisitor:(id<SROrderVisitorProtocol>)visitor
+- (void)visitWithVisitor:(SRStateTaxOrderVisitor *)visitor
 {
     [self.orders accept:visitor];
     self.totalTaxLabel.text = [NSString stringWithFormat:@"%.2f", visitor.totalTax];

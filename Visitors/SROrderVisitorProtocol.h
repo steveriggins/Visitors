@@ -11,5 +11,4 @@
 
 @protocol SROrderVisitorProtocol <NSObject>
 - (void)visitOrder:(id<SROrderProtocol>)order;
-- (CGFloat)totalTax;
 @end
