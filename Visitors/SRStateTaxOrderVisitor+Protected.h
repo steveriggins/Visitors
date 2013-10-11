@@ -11,4 +11,5 @@
 
 @interface SRStateTaxOrderVisitor (Protected)
 @property (nonatomic, assign) CGFloat totalTax;
+@property (nonatomic, assign) CGFloat total;
 @end

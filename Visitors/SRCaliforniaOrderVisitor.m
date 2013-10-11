@@ -7,13 +7,12 @@
 //
 
 #import "SRCaliforniaOrderVisitor.h"
-#import "SRStateTaxOrderVisitor+Protected.h"
 
 @implementation SRCaliforniaOrderVisitor
-- (void)visitOrder:(id<SROrderProtocol>)order
+
+- (CGFloat)taxRate
 {
-    CGFloat tax = .5 * order.subtotal;
-    self.totalTax += tax;
+    return 0.5;
 }
 
 @end

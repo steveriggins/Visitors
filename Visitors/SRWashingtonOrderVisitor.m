@@ -7,13 +7,13 @@
 //
 
 #import "SRWashingtonOrderVisitor.h"
-#import "SRStateTaxOrderVisitor+Protected.h"
 
 @implementation SRWashingtonOrderVisitor
-- (void)visitOrder:(id<SROrderProtocol>)order
+
+- (CGFloat)taxRate
 {
-    CGFloat tax = 0.09 * order.subtotal;
-    self.totalTax += tax;
+    return 0.09;
 }
+
 
 @end

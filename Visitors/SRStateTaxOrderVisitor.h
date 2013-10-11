@@ -10,6 +10,9 @@
 #import "SROrderVisitorProtocol.h"
 
 @interface SRStateTaxOrderVisitor : NSObject <SROrderVisitorProtocol>
-@property (nonatomic, readonly, assign) CGFloat totalTax;   // SROrderVisitorProtocol
-- (void)visitOrder:(id<SROrderProtocol>)order;              // SROrderVisitorProtocol
+@property (nonatomic, readonly, assign) CGFloat totalTax;
+@property (nonatomic, readonly, assign) CGFloat total;
+@property (nonatomic, readonly, assign) CGFloat taxRate;
+
+- (void)visitOrder:(id<SROrderProtocol>)order;              // Fulfills SROrderVisitorProtocol
 @end

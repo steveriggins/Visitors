@@ -16,6 +16,8 @@
 @interface SRViewController ()
 @property (nonatomic, strong) SROrderCollection *orders;
 @property (nonatomic, weak) IBOutlet UILabel *totalTaxLabel;
+@property (nonatomic, weak) IBOutlet UILabel *taxRateLabel;
+@property (nonatomic, weak) IBOutlet UILabel *totalLabel;
 @end
 
 @implementation SRViewController
@@ -47,6 +49,8 @@
 {
     [self.orders accept:visitor];
     self.totalTaxLabel.text = [NSString stringWithFormat:@"%.2f", visitor.totalTax];
+    self.taxRateLabel.text = [NSString stringWithFormat:@"%.2f", visitor.taxRate * 100];
+    self.totalLabel.text = [NSString stringWithFormat:@"%.2f", visitor.total];
 }
 
 - (IBAction)californiaAction:(id)sender

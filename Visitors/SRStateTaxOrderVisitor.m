@@ -10,12 +10,21 @@
 
 @interface SRStateTaxOrderVisitor ()
 @property (nonatomic, assign) CGFloat totalTax;
+@property (nonatomic, assign) CGFloat total;
 @end
 
 @implementation SRStateTaxOrderVisitor
 
 - (void)visitOrder:(id<SROrderProtocol>)order
 {
-    
+    self.total += order.subtotal;
+    CGFloat tax = self.taxRate * order.subtotal;
+    self.totalTax += tax;
 }
+
+- (CGFloat)taxRate
+{
+    return 0.0;
+}
+
 @end
