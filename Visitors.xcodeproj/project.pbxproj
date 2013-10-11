@@ -21,6 +21,12 @@
 		00DF4EC81807AFB900D89627 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DF4EAA1807AFB900D89627 /* UIKit.framework */; };
 		00DF4ED01807AFB900D89627 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00DF4ECE1807AFB900D89627 /* InfoPlist.strings */; };
 		00DF4ED21807AFB900D89627 /* VisitorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF4ED11807AFB900D89627 /* VisitorsTests.m */; };
+		00DF4EDE1807B03D00D89627 /* SROrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF4EDD1807B03D00D89627 /* SROrder.m */; };
+		00DF4EE11807B10C00D89627 /* SROrderCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF4EE01807B10C00D89627 /* SROrderCollection.m */; };
+		00DF4EE61807B48800D89627 /* SROregonOrderVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF4EE51807B48800D89627 /* SROregonOrderVisitor.m */; };
+		00DF4EE91807B54500D89627 /* SRStateTaxOrderVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF4EE81807B54500D89627 /* SRStateTaxOrderVisitor.m */; };
+		00DF4EED1807B75200D89627 /* SRWashingtonOrderVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF4EEC1807B75200D89627 /* SRWashingtonOrderVisitor.m */; };
+		00DF4EF01807B7C900D89627 /* SRCaliforniaOrderVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF4EEF1807B7C900D89627 /* SRCaliforniaOrderVisitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,22 @@
 		00DF4ECD1807AFB900D89627 /* VisitorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisitorsTests-Info.plist"; sourceTree = "<group>"; };
 		00DF4ECF1807AFB900D89627 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00DF4ED11807AFB900D89627 /* VisitorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisitorsTests.m; sourceTree = "<group>"; };
+		00DF4EDB1807AFF700D89627 /* SROrderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SROrderProtocol.h; sourceTree = "<group>"; };
+		00DF4EDC1807B03D00D89627 /* SROrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SROrder.h; sourceTree = "<group>"; };
+		00DF4EDD1807B03D00D89627 /* SROrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SROrder.m; sourceTree = "<group>"; };
+		00DF4EDF1807B10C00D89627 /* SROrderCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SROrderCollection.h; sourceTree = "<group>"; };
+		00DF4EE01807B10C00D89627 /* SROrderCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SROrderCollection.m; sourceTree = "<group>"; };
+		00DF4EE21807B16E00D89627 /* SROrderVisitorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SROrderVisitorProtocol.h; sourceTree = "<group>"; };
+		00DF4EE31807B1CF00D89627 /* SROrderVisiteeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SROrderVisiteeProtocol.h; sourceTree = "<group>"; };
+		00DF4EE41807B48800D89627 /* SROregonOrderVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SROregonOrderVisitor.h; sourceTree = "<group>"; };
+		00DF4EE51807B48800D89627 /* SROregonOrderVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SROregonOrderVisitor.m; sourceTree = "<group>"; };
+		00DF4EE71807B54500D89627 /* SRStateTaxOrderVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRStateTaxOrderVisitor.h; sourceTree = "<group>"; };
+		00DF4EE81807B54500D89627 /* SRStateTaxOrderVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRStateTaxOrderVisitor.m; sourceTree = "<group>"; };
+		00DF4EEA1807B5F900D89627 /* SRStateTaxOrderVisitor+Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SRStateTaxOrderVisitor+Protected.h"; sourceTree = "<group>"; };
+		00DF4EEB1807B75200D89627 /* SRWashingtonOrderVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWashingtonOrderVisitor.h; sourceTree = "<group>"; };
+		00DF4EEC1807B75200D89627 /* SRWashingtonOrderVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWashingtonOrderVisitor.m; sourceTree = "<group>"; };
+		00DF4EEE1807B7C900D89627 /* SRCaliforniaOrderVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCaliforniaOrderVisitor.h; sourceTree = "<group>"; };
+		00DF4EEF1807B7C900D89627 /* SRCaliforniaOrderVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCaliforniaOrderVisitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +139,22 @@
 				00DF4EB81807AFB900D89627 /* Main.storyboard */,
 				00DF4EBB1807AFB900D89627 /* SRViewController.h */,
 				00DF4EBC1807AFB900D89627 /* SRViewController.m */,
+				00DF4EDB1807AFF700D89627 /* SROrderProtocol.h */,
+				00DF4EE21807B16E00D89627 /* SROrderVisitorProtocol.h */,
+				00DF4EE31807B1CF00D89627 /* SROrderVisiteeProtocol.h */,
+				00DF4EDC1807B03D00D89627 /* SROrder.h */,
+				00DF4EDD1807B03D00D89627 /* SROrder.m */,
+				00DF4EDF1807B10C00D89627 /* SROrderCollection.h */,
+				00DF4EE01807B10C00D89627 /* SROrderCollection.m */,
+				00DF4EE71807B54500D89627 /* SRStateTaxOrderVisitor.h */,
+				00DF4EE81807B54500D89627 /* SRStateTaxOrderVisitor.m */,
+				00DF4EEA1807B5F900D89627 /* SRStateTaxOrderVisitor+Protected.h */,
+				00DF4EE41807B48800D89627 /* SROregonOrderVisitor.h */,
+				00DF4EE51807B48800D89627 /* SROregonOrderVisitor.m */,
+				00DF4EEB1807B75200D89627 /* SRWashingtonOrderVisitor.h */,
+				00DF4EEC1807B75200D89627 /* SRWashingtonOrderVisitor.m */,
+				00DF4EEE1807B7C900D89627 /* SRCaliforniaOrderVisitor.h */,
+				00DF4EEF1807B7C900D89627 /* SRCaliforniaOrderVisitor.m */,
 				00DF4EBE1807AFB900D89627 /* Images.xcassets */,
 				00DF4EAD1807AFB900D89627 /* Supporting Files */,
 			);
@@ -250,9 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DF4EF01807B7C900D89627 /* SRCaliforniaOrderVisitor.m in Sources */,
+				00DF4EED1807B75200D89627 /* SRWashingtonOrderVisitor.m in Sources */,
+				00DF4EE11807B10C00D89627 /* SROrderCollection.m in Sources */,
 				00DF4EB31807AFB900D89627 /* main.m in Sources */,
+				00DF4EE61807B48800D89627 /* SROregonOrderVisitor.m in Sources */,
+				00DF4EDE1807B03D00D89627 /* SROrder.m in Sources */,
 				00DF4EBD1807AFB900D89627 /* SRViewController.m in Sources */,
 				00DF4EB71807AFB900D89627 /* SRAppDelegate.m in Sources */,
+				00DF4EE91807B54500D89627 /* SRStateTaxOrderVisitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
